@@ -1,0 +1,92 @@
+.calculator {
+    width: 100%;
+    /* Make calculator full width */
+    max-width: 350px;
+    /* Constrain the width to fit iPhone screen better */
+    height: 100%;
+    /* Make calculator full height */
+    max-height: 700px;
+    /* Constrain the height */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    /* Increase border-radius to match iOS style */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.display {
+    background-color: #222;
+    color: #fff;
+    font-size: 2.5rem;
+    /* Adjust font size for larger screen */
+    padding: 15px;
+    /* Adjust padding for larger screen */
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* Increase margin for better spacing */
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    flex: 2;
+    /* Ensure buttons section occupies more space */
+}
+
+button {
+    background-color: #f4f4f4;
+    color: #333;
+    border: none;
+    padding: 20px;
+    /* Adjust button size for better touch area */
+    font-size: 1.5rem;
+    /* Increase font size for readability */
+    border-radius: 10px;
+    /* Increase border-radius for iOS style */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button:active {
+    background-color: #ccc;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.clear-btn {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.clear-btn:hover {
+    background-color: #c9302c;
+}
+
+.clear-btn:active {
+    background-color: #ac2925;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

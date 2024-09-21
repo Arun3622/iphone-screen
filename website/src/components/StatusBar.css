@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+.status-bar {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+}
+
+.status-center {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.status-right {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+}

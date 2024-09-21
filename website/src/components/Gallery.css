@@ -1,0 +1,29 @@
+/* src/components/Gallery.css */
+
+.gallery {
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.gallery h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-images img {
+    width: 90px;
+    height: 90px;
+    margin: 5px 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
